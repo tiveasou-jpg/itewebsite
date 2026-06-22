@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Collection - Jackets</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: #DED1BD; color: #000000; padding: 60px 20px; display: flex; flex-direction: column; align-items: center; }
+        .collection-header { text-align: center; max-width: 1200px; width: 100%; margin-bottom: 50px; }
+        .collection-title { font-size: 2.6rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 25px; }
+        .category-menu { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
+        
+        /* Links styled as pill buttons */
+        .category-link { display: inline-block; padding: 14px 28px; font-size: 0.95rem; font-weight: 500; border-radius: 50px; background-color: #f2f2f2; color: #000000; text-decoration: none; transition: all 0.2s ease; }
+        .category-link:hover { background-color: #e6e6e6; }
+        .category-link.active { background-color: #ff7666; color: #ffffff; }
+
+        /* Grid & Cards */
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 30px; max-width: 1200px; width: 100%; }
+        .product-card { background: #ffffff; border-radius: 16px; overflow: hidden; text-align: left; }
+        
+        /* FIXED: Renamed to match HTML layout (.image-wrapper) */
+        .image-wrapper { 
+            width: 100%; 
+            height: 340px; 
+            background-color: #f7f7f7; 
+            overflow: hidden;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+        
+        /* FIXED: Forces the images to crop beautifully without breaking proportions */
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .product-info { padding: 15px 12px; } /* Slightly bumped padding for better spacing */
+        .product-name { font-size: 1.1rem; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+        .product-price { font-size: 1rem; font-weight: 700; color: #ff7666; }
+    </style>
+</head>
+<body>
+
+    <header class="collection-header">
+        <a href="shop.html" class="category-link "> <-- back to shop</a>
+
+        <h1 class="collection-title">Our Collection</h1>
+        <nav class="category-menu">
+            <a href="jackets.html" class="category-link ">Jackets</a>
+            <a href="dress.html" class="category-link ">Dress</a>
+            <a href="summer-set.html" class="category-link active">summer set</a>
+            <a href="skirts.html" class="category-link ">skirts</a>
+        </nav>
+    </header>
+
+     <main class="product-grid">
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/5e/69/06/5e6906ae586d4210ccb136b373e5881f.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/0d/e2/3a/0de23a3cfc78cb772315e61291eff365.jpg" alt="Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/0e/30/fa/0e30fa826ae687b883603a6acc60c802.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/6f/a7/42/6fa74250e492cfc5d7d2472ee5f3b97d.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name"> summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/5c/c9/49/5cc949b837c9f0f1c53284b1aebabf1e.jpg" alt="Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/0a/e4/5a/0ae45aa7040ccb568902f44871d75f1a.jpg" alt="Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+         <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/30/cf/a5/30cfa5f39700dc071f66ab041ca164b1.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name"> summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/7c/65/ee/7c65ee5e0175f2d0e34951e5dd820862.jpg" alt="Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/30/3a/d3/303ad3b780e317c16ac9c7e46bf8c27e.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/9d/27/cb/9d27cb5ccd7618e75b700780abe6f07d.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/95/a4/6d/95a46d5e85c1cf9e431b2cf57865bb4b.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/70/12/af/7012af5fe3fa04fbbbdf9f4c5b5a8443.jpg" alt="Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/7a/83/f2/7a83f2637847f89400f4bd986439df18.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/87/46/a6/8746a69f5a3e9f8a98a2e47b8ce628a6.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div> 
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/2f/15/a9/2f15a9358c8a683f124cbfe954b962a7.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article>
+         <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/7d/11/36/7d1136c2a9b82420fd2bdbe5a4d8dd90.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/f5/12/93/f51293c2bb123c6ada83fd8ab31412d4.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/d8/82/fd/d882fd1f131cf5b8e366350322d5c280.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/cf/4e/24/cf4e24f8139211072a4d8d900fd0c0d2.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/ed/47/16/ed4716c080f2b3b53c43f943b4060032.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/15/04/bd/1504bd39e6237667007738e47ec8c8df.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/db/61/d9/db61d9e1b52d65f5dea1d9c37159d72b.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/73/5f/19/735f19c9bcb9bdcc98b2deb9be3d50bd.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/cc/8f/1d/cc8f1dcf950c20bfd22b61623aef958b.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/b4/e4/66/b4e4663397c178026391f98e26d3ed25.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/34/6c/10/346c10d8c2348a6a585b2655b9224019.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">jsummer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/50/fd/05/50fd05c92d22fb6c15db1b4043a0c125.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/00/4a/7e/004a7e4fad1006df46a4688922d68f0d.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">summer-set</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article>
+        
+    </main>
+
+
+</body>
+</html>

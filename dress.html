@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Collection - Jackets</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: #DED1BD; color: #000000; padding: 60px 20px; display: flex; flex-direction: column; align-items: center; }
+        .collection-header { text-align: center; max-width: 1200px; width: 100%; margin-bottom: 50px; }
+        .collection-title { font-size: 2.6rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 25px; }
+        .category-menu { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
+        
+        /* Links styled as pill buttons */
+        .category-link { display: inline-block; padding: 14px 28px; font-size: 0.95rem; font-weight: 500; border-radius: 50px; background-color: #f2f2f2; color: #000000; text-decoration: none; transition: all 0.2s ease; }
+        .category-link:hover { background-color: #e6e6e6; }
+        .category-link.active { background-color: #ff7666; color: #ffffff; }
+
+        /* Grid & Cards */
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 30px; max-width: 1200px; width: 100%; }
+        .product-card { background: #ffffff; border-radius: 16px; overflow: hidden; text-align: left; }
+        
+        /* FIXED: Renamed to match HTML layout (.image-wrapper) */
+        .image-wrapper { 
+            width: 100%; 
+            height: 340px; 
+            background-color: #f7f7f7; 
+            overflow: hidden;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+        
+        /* FIXED: Forces the images to crop beautifully without breaking proportions */
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .product-info { padding: 15px 12px; } /* Slightly bumped padding for better spacing */
+        .product-name { font-size: 1.1rem; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+        .product-price { font-size: 1rem; font-weight: 700; color: #ff7666; }
+    </style>
+</head>
+<body>
+
+    <header class="collection-header">
+        <a href="shop.html" class="category-link "> <-- back to shop</a>
+
+        <h1 class="collection-title">Our Collection</h1>
+        <nav class="category-menu">
+            <a href="jackets.html" class="category-link ">Jackets</a>
+            <a href="dress.html" class="category-link active">Dress</a>
+            <a href="summer-set.html" class="category-link">summer set</a>
+            <a href="skirts.html" class="category-link">skirts</a>
+        </nav>
+    </header>
+
+     <main class="product-grid">
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/06/55/a0/0655a00df786a37dca4c9df5a03303cb.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name"> Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/83/e6/4e/83e64e3b9aa8f20962c4feddd08fa448.jpg" alt="Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/2b/c4/fc/2bc4fcdb8d103042a405ba7e24e984a1.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name"> Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/d7/1b/b3/d71bb358f85c36716474d860639870bc.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/50/6d/89/506d897711c5cf01f7973ddc28370c46.jpg" alt="Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/2a/d9/1b/2ad91b110cdccde978033508935b0da2.jpg" alt="Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+         <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/b1/3d/93/b13d934362941afcf2686a262954b2c0.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/7e/56/c4/7e56c41b4d2682cffe7e19e768668dad.jpg" alt="Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/51/48/59/5148590fc51f01947380deb7efa01ea8.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/fe/47/e5/fe47e531bb603f5530a23b93ef71b979.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/bc/b8/01/bcb8013bf23df7c6c9514daee1739be4.jpg" alt=" Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/87/43/93/874393691601a65660b6c9178aec66c9.jpg" alt="Jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/8a/5b/56/8a5b56a8aba3a3e5359f83a7d4bfd0e1.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/e0/a6/ef/e0a6ef48ffd243ada9596ca006df2aaa.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/42/2c/ad/422cadc198489170246f21ce3b270166.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article>
+         <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/ac/2e/22/ac2e222e636755ec8f640217f836bf14.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/1c/f8/7b/1cf87b5fffeed90026174d3bc417a0f2.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/68/8f/36/688f365dcec34a4aae1a5a99c2f929bc.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/89/a0/f0/89a0f0d9b6c4dc4e0056140bd7e6949a.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/25/a5/5a/25a55a69475a67fc8497bb2f683b2086.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article>
+        <article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/41/d4/3b/41d43b53874520b5103ef505517dba56.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/69/2a/62/692a62c46967b05ffb3bdc23ee1f049d.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/3e/46/d6/3e46d66795d2da34377373a58b5ed202.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/14/1f/08/141f08914e5c3242aa7a1f97f7920e8a.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/b8/6c/3d/b86c3dbd74a586e665e0d4b17056ba67.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/1200x/7d/4b/80/7d4b80d2ba41d8b9812faba5f99ba34d.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/ab/60/47/ab6047f7e0becf21bf69a5493e61b8a7.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="https://i.pinimg.com/736x/49/fd/e5/49fde573c3c6426c1bd66c17f4a38b37.jpg"alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Dress</h2>
+                    <p class="product-price">$29.99</p>
+                </div>
+                </div>
+            </div>
+        </article>
+        
+    </main>
+
+
+</body>
+</html>
